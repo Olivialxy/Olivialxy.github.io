@@ -1,17 +1,16 @@
 ---
-layout: post
-title: "Illinois State Buildings Visualization"
+### Illinois State Buildings Visualization
 ---
 
-### 🔗 The Data  
+### The Data  
 [Click here to view the dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv)
 
-### 📊 The Analysis  
+### The Analysis  
 [Click here to view the Python Notebook](https://github.com/Olivialxy/Olivialxy.github.io/blob/main/HW5.ipynb)
 
 ---
 
-### 🏙️ Plot 1: Total Square Footage by Agency
+### Plot 1: Total Square Footage by Agency
 
 This bar chart shows the total square footage of state-owned buildings managed by each Illinois government agency. I made this plot to better understand how building space is distributed across different agencies — in other words, which departments are using the most physical infrastructure. I grouped the data by “Agency Name” and calculated the total square footage using pandas. This was a simple transformation but helped me get a clearer overview of the dataset. 
 
@@ -19,7 +18,7 @@ I used a horizontal bar chart because long agency names are easier to read this 
 
 ---
 
-### 📌 Plot 2: Interactive Bar Chart by City and Building Usage Type
+### Plot 2: Interactive Bar Chart by City and Building Usage Type
 
 This chart breaks down the number of buildings in each city, organized by how those buildings are used — for example, as offices, educational facilities, storage, and more. I created this plot to explore how state-owned buildings are distributed across Illinois based on their purpose, and where different types of buildings are concentrated. I started by grouping the data using pandas by both “City” and “Usage Description” and counted the number of buildings for each pair. I also removed rows that didn’t have a usage category since they wouldn’t add much value to the chart.
 
@@ -27,6 +26,6 @@ I used a vertical bar chart here, with city names on the y-axis and the building
 
 ---
 
-### 🎯 About the Interactivity
+### About the Interactivity
 
 The interactive feature in the second chart makes it much more useful for exploring the dataset. I used Altair’s `selection_single()` with a `binding_select` dropdown menu to let users filter the chart by building usage type. This keeps the chart from feeling overwhelming and helps viewers dig into specific parts of the data depending on their interests. Instead of seeing every city and every building use all at once (which would be messy), the dropdown gives people a simple way to isolate what they care about — like just looking at “Laboratory” or “Residential” buildings. I think this kind of interaction makes the chart more engaging and informative, especially for people trying to find patterns or differences between cities.
