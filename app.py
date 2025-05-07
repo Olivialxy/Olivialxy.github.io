@@ -80,14 +80,23 @@ st.altair_chart(line)
 
 # -- Contextual Visualizations --
 st.markdown("### Contextual Visualizations")
-st.image("context_chart1.png", caption="Context Chart 1: Global Banking Risk")
-st.image("context_chart2.png", caption="Context Chart 2: Regional Credit Growth")
+st.image("context_chart1.png", caption="Source: World Bank — Bank Capital to Assets Ratio by Income Group (GFDD.SI.07)")
+st.image("context_chart2.png", caption="Source: World Bank — Domestic Credit to Private Sector by Banks (% of GDP) (FS.AST.PRVT.GD.ZS)")
+
 
 # -- Data Sources & Notebook --
-st.markdown("### 📚 Data Sources")
+st.markdown("### Data Sources")
 st.markdown("""
-- Global Financial Development Database: [World Bank](https://datacatalog.worldbank.org/dataset/global-financial-development)
-- Context visuals from World Development Indicators and related sources
+- **Primary Dataset**: Global Financial Development Database  
+  https://datacatalog.worldbank.org/dataset/global-financial-development
+
+- **Context Chart 1**: Bank Capital to Assets Ratio (GFDD.SI.07)  
+  https://databank.worldbank.org/source/global-financial-development/Series/GFDD.SI.07
+
+- **Context Chart 2**: Domestic Credit to Private Sector by Banks (% of GDP) (FS.AST.PRVT.GD.ZS)  
+  https://databank.worldbank.org/source/jobs/Series/FS.AST.PRVT.GD.ZS
+
 """)
+
 
 st.markdown("[View the Jupyter notebook used for analysis](notebook_link.txt)")
